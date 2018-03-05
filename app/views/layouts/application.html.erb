@@ -7,8 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body class="container">
+  <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class='container'>
         <div class="navbar-header">
@@ -27,7 +26,9 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-
-    <%= yield %>
+    
+    <div class="conatainer">
+      <%= yield %>
+    </div>
   </body>
 </html>
